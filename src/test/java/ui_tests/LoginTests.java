@@ -14,8 +14,6 @@ public class LoginTests extends ApplicationManager {
         homePage.clickBtnLoginHeader();
         LoginPage loginPage = new LoginPage(getDriver());
         loginPage.typeLoginForm("a@mail.ru", "Password123!");
-
-
     }
 
     @Test
