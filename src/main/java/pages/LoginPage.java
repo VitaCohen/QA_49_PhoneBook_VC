@@ -1,6 +1,7 @@
 package pages;
 
 import dto.User;
+import dto.UserLombok;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -22,6 +23,9 @@ public class LoginPage extends BasePage{
     @FindBy(css = "button[name='login']")
     WebElement btnLoginForm;
 
+    @FindBy(xpath = "//button[text() = 'Sign Out']")
+    WebElement btnSignOutHeader;
+
 public void typeLoginForm(String email, String password) {
     inputEmail.sendKeys(email);
     inputPassword.sendKeys(password);
@@ -34,6 +38,16 @@ public void typeLoginForm(String email, String password) {
         inputPassword.sendKeys(user.getPassword());
         btnLoginForm.click();
 
+    }
+    public void typeLoginFormWithUserLombok(UserLombok userLombok) {
+        inputEmail.sendKeys(userLombok.getUsername());
+        inputPassword.sendKeys(userLombok.getPassword());
+        btnLoginForm.click();
+
+    }
+
+    public boolean isSignOutDisplayed(){
+        return isElementDisplayed(btnSignOutHeader);
     }
 
 
