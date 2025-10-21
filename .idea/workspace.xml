@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0ce5e4d-f002-4474-b6ab-38d4c6b5c19a" name="Changes" comment="create user1">
-      <change afterPath="$PROJECT_DIR$/src/main/java/dto/UserLombok.java" afterDir="false" />
+    <list default="true" id="b0ce5e4d-f002-4474-b6ab-38d4c6b5c19a" name="Changes" comment="hw_5 lombook, assert">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ui_tests/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui_tests/LoginTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -239,12 +234,21 @@
       <option name="project" value="LOCAL" />
       <updated>1760641334184</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="hw_5 lombook, assert">
+      <option name="closed" value="true" />
+      <created>1760988839797</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1760988839797</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="create user" />
     <MESSAGE value="create user1" />
-    <option name="LAST_COMMIT_MESSAGE" value="create user1" />
+    <MESSAGE value="hw_5 lombook, assert" />
+    <option name="LAST_COMMIT_MESSAGE" value="hw_5 lombook, assert" />
   </component>
 </project>
