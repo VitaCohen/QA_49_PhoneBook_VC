@@ -26,6 +26,11 @@ public class LoginPage extends BasePage{
     @FindBy(xpath = "//button[text() = 'Sign Out']")
     WebElement btnSignOutHeader;
 
+    @FindBy(css = "button[name='registration']")
+    WebElement btnRegistrationForm;
+
+
+
 public void typeLoginForm(String email, String password) {
     inputEmail.sendKeys(email);
     inputPassword.sendKeys(password);
@@ -44,6 +49,12 @@ public void typeLoginForm(String email, String password) {
         inputPassword.sendKeys(userLombok.getPassword());
         btnLoginForm.click();
 
+    }
+
+    public void typrRegistrationFormWithUserLombok(UserLombok userLombok){
+    inputEmail.sendKeys(userLombok.getUsername());
+    inputPassword.sendKeys(userLombok.getPassword());
+    btnRegistrationForm.click();
     }
 
     public boolean isSignOutDisplayed(){
