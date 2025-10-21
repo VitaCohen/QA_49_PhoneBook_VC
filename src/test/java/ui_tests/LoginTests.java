@@ -59,6 +59,7 @@ public class LoginTests extends ApplicationManager {
 
     }
 
+    //Homework_6
     @Test
     public void registrationPositiveTest_userLombok() {
         UserLombok userLombok = UserLombok.builder()
@@ -72,7 +73,7 @@ public class LoginTests extends ApplicationManager {
         Assert.assertTrue(loginPage.isSignOutDisplayed());
 
     }
-
+    //Homework_6
     @Test
     public void registrationNegativeTestULombok_wrongEmail() {
         UserLombok userLombok = UserLombok.builder()
@@ -85,7 +86,7 @@ public class LoginTests extends ApplicationManager {
         loginPage.typrRegistrationFormWithUserLombok(userLombok);
 
     }
-
+    //Homework_6
     @Test
     public void registrationNegativeTestULombok_wrongPassword() {
         UserLombok userLombok = UserLombok.builder()

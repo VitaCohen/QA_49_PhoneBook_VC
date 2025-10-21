@@ -23,6 +23,7 @@ public class LoginPage extends BasePage{
     @FindBy(css = "button[name='login']")
     WebElement btnLoginForm;
 
+    //Homework_6
     @FindBy(xpath = "//button[text() = 'Sign Out']")
     WebElement btnSignOutHeader;
 
@@ -44,13 +45,15 @@ public void typeLoginForm(String email, String password) {
         btnLoginForm.click();
 
     }
+
+    //Homework_6
     public void typeLoginFormWithUserLombok(UserLombok userLombok) {
         inputEmail.sendKeys(userLombok.getUsername());
         inputPassword.sendKeys(userLombok.getPassword());
         btnLoginForm.click();
 
     }
-
+    //Homework_6
     public void typrRegistrationFormWithUserLombok(UserLombok userLombok){
     inputEmail.sendKeys(userLombok.getUsername());
     inputPassword.sendKeys(userLombok.getPassword());
