@@ -63,7 +63,7 @@ public class LoginTests extends ApplicationManager {
     @Test
     public void registrationPositiveTest_userLombok() {
         UserLombok userLombok = UserLombok.builder()
-                .username("afs1@mail.ru")
+                .username("afs123@mail.ru")
                 .password("Password123!")
                 .build();
         HomePage homePage = new HomePage(getDriver());
@@ -77,7 +77,7 @@ public class LoginTests extends ApplicationManager {
     @Test
     public void registrationNegativeTestULombok_wrongEmail() {
         UserLombok userLombok = UserLombok.builder()
-                .username("afs@@mail.ru")
+                .username("afs12@@mail.ru")
                 .password("Password123!")
                 .build();
         HomePage homePage = new HomePage(getDriver());
@@ -90,7 +90,7 @@ public class LoginTests extends ApplicationManager {
     @Test
     public void registrationNegativeTestULombok_wrongPassword() {
         UserLombok userLombok = UserLombok.builder()
-                .username("afs12@@mail.ru")
+                .username("afs123@@mail.ru")
                 .password("password123!")
                 .build();
         HomePage homePage = new HomePage(getDriver());
