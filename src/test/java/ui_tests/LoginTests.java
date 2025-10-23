@@ -5,6 +5,7 @@ import dto.UserLombok;
 import manager.ApplicationManager;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import pages.ContactsPage;
 import pages.HomePage;
 import pages.LoginPage;
 
@@ -18,7 +19,8 @@ public class LoginTests extends ApplicationManager {
         homePage.clickBtnLoginHeader();
         LoginPage loginPage = new LoginPage(getDriver());
         loginPage.typeLoginForm("a@mail.ru", "Password123!");
-        Assert.assertTrue(loginPage.isSignOutDisplayed());
+        Assert.assertTrue(new ContactsPage(getDriver()).isTextContactsPtresent("CONTACTS"));
+        // Assert.assertTrue(loginPage.isSignOutDisplayed());
 
     }
 
@@ -43,6 +45,8 @@ public class LoginTests extends ApplicationManager {
         homePage.clickBtnLoginHeader();
         LoginPage loginPage = new LoginPage(getDriver());
         loginPage.typeLoginFormWithUser(user);
+        Assert.assertEquals(loginPage.closeAlertReturnText(),
+                "Wrong email or password");
 
     }
 
@@ -73,6 +77,7 @@ public class LoginTests extends ApplicationManager {
         Assert.assertTrue(loginPage.isSignOutDisplayed());
 
     }
+
     //Homework_6
     @Test
     public void registrationNegativeTestULombok_wrongEmail() {
@@ -86,6 +91,7 @@ public class LoginTests extends ApplicationManager {
         loginPage.typrRegistrationFormWithUserLombok(userLombok);
 
     }
+
     //Homework_6
     @Test
     public void registrationNegativeTestULombok_wrongPassword() {
