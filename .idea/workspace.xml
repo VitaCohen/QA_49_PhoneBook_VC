@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b0ce5e4d-f002-4474-b6ab-38d4c6b5c19a" name="Changes" comment="create gegistration tests, faker,allert">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ui_tests/RegistrationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui_tests/RegistrationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +72,7 @@
     "Gradle.LoginTests.registrationNegativeTestULombok_wrongPassword.executor": "Run",
     "Gradle.LoginTests.registrationPositivetTest_userLombok.executor": "Run",
     "Gradle.RegistrationTests.registrationNegativeTest_wrongEmail.executor": "Run",
+    "Gradle.RegistrationTests.registrationNegativeTest_wrongPassword.executor": "Run",
     "Gradle.RegistrationTests.registrationPositiveTest.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -79,7 +81,7 @@
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.RegistrationTests.registrationNegativeTest_wrongEmail">
+  <component name="RunManager" selected="Gradle.RegistrationTests.registrationNegativeTest_wrongPassword">
     <configuration name="LoginTests.loginNegativeTest_wrongPassword" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -128,30 +130,6 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="LoginTests.registrationNegativeTestULombok_wrongPassword" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;ui_tests.LoginTests.registrationNegativeTestULombok_wrongPassword&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
     <configuration name="RegistrationTests.registrationNegativeTest_wrongEmail" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -166,6 +144,30 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;ui_tests.RegistrationTests.registrationNegativeTest_wrongEmail&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="RegistrationTests.registrationNegativeTest_wrongPassword" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ui_tests.RegistrationTests.registrationNegativeTest_wrongPassword&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -202,11 +204,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.RegistrationTests.registrationNegativeTest_wrongPassword" />
         <item itemvalue="Gradle.RegistrationTests.registrationNegativeTest_wrongEmail" />
         <item itemvalue="Gradle.RegistrationTests.registrationPositiveTest" />
         <item itemvalue="Gradle.LoginTests.loginNegativeTest_wrongPassword" />
         <item itemvalue="Gradle.LoginTests.loginPositiveTest" />
-        <item itemvalue="Gradle.LoginTests.registrationNegativeTestULombok_wrongPassword" />
       </list>
     </recent_temporary>
   </component>
@@ -299,7 +301,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761291657355</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="create gegistration tests, faker,allert">
+      <option name="closed" value="true" />
+      <created>1761291702696</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1761291702696</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

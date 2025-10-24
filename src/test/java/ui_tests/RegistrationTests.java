@@ -41,4 +41,16 @@ public class RegistrationTests extends ApplicationManager {
 
     }
 
+    // Homework_7
+
+    @Test
+    public void registrationNegativeTest_wrongPassword() {
+        User user = positiveUser();
+        user.setPassword("Wrong password");
+        loginPage.typeRegForm(user);
+        Assert.assertTrue(loginPage.closeAlertReturnText().contains(
+               "Wrong email or password format"));
+
+    }
+
 }
