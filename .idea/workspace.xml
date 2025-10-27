@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0ce5e4d-f002-4474-b6ab-38d4c6b5c19a" name="Changes" comment="create gegistration tests, faker,allert">
+    <list default="true" id="b0ce5e4d-f002-4474-b6ab-38d4c6b5c19a" name="Changes" comment="Homework_7">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/AddPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/HeaderMenuItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ui_tests/AddNewContactTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ui_tests/RegistrationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui_tests/RegistrationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +44,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -62,6 +66,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Gradle.AddNewContactTests.addNewContactPositiveTest.executor": "Run",
     "Gradle.HomeTests.firstTest.executor": "Run",
     "Gradle.LoginTests.executor": "Run",
     "Gradle.LoginTests.loginNegativeTest_wrongPassword.executor": "Run",
@@ -81,8 +86,13 @@
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.RegistrationTests.registrationNegativeTest_wrongPassword">
-    <configuration name="LoginTests.loginNegativeTest_wrongPassword" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="pages" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.AddNewContactTests.addNewContactPositiveTest">
+    <configuration name="AddNewContactTests.addNewContactPositiveTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -95,7 +105,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ui_tests.LoginTests.loginNegativeTest_wrongPassword&quot;" />
+            <option value="&quot;ui_tests.AddNewContactTests.addNewContactPositiveTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -106,7 +116,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="LoginTests.loginPositiveTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LoginTests.loginPositivetTest_userLombok" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -119,7 +129,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ui_tests.LoginTests.loginPositiveTest&quot;" />
+            <option value="&quot;ui_tests.LoginTests.loginPositivetTest_userLombok&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -204,11 +214,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.AddNewContactTests.addNewContactPositiveTest" />
+        <item itemvalue="Gradle.LoginTests.loginPositivetTest_userLombok" />
         <item itemvalue="Gradle.RegistrationTests.registrationNegativeTest_wrongPassword" />
         <item itemvalue="Gradle.RegistrationTests.registrationNegativeTest_wrongEmail" />
         <item itemvalue="Gradle.RegistrationTests.registrationPositiveTest" />
-        <item itemvalue="Gradle.LoginTests.loginNegativeTest_wrongPassword" />
-        <item itemvalue="Gradle.LoginTests.loginPositiveTest" />
       </list>
     </recent_temporary>
   </component>
@@ -309,7 +319,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761291702696</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Homework_7">
+      <option name="closed" value="true" />
+      <created>1761329586199</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1761329586199</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -318,6 +336,7 @@
     <MESSAGE value="hw_5 lombook, assert" />
     <MESSAGE value="HW_6" />
     <MESSAGE value="create gegistration tests, faker,allert" />
-    <option name="LAST_COMMIT_MESSAGE" value="create gegistration tests, faker,allert" />
+    <MESSAGE value="Homework_7" />
+    <option name="LAST_COMMIT_MESSAGE" value="Homework_7" />
   </component>
 </project>
