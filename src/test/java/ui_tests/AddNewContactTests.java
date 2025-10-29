@@ -11,27 +11,28 @@ import static pages.BasePage.*;
 public class AddNewContactTests extends ApplicationManager {
 
 
-       HomePage homePage;
-        LoginPage loginPage;
-        ContactsPage contactsPage;
-        AddPage addPage;
+    HomePage homePage;
+    LoginPage loginPage;
+    ContactsPage contactsPage;
+    AddPage addPage;
 
 
-        @BeforeMethod
-        public void login(){
-            homePage = new HomePage(getDriver());
-            loginPage = BasePage.clickButtonHeader(HeaderMenuItem.LOGIN);
-            loginPage.typeLoginForm("a@mail.ru", "Password123!");
-            contactsPage = new ContactsPage(getDriver());
-            addPage = clickButtonHeader(HeaderMenuItem.ADD);
+    @BeforeMethod
+    public void login() {
+        homePage = new HomePage(getDriver());
+        loginPage = BasePage.clickButtonHeader(HeaderMenuItem.LOGIN);
+        loginPage.typeLoginForm("iv@mail.com", "123456Aa!");
+        contactsPage = new ContactsPage(getDriver());
+        addPage = clickButtonHeader(HeaderMenuItem.ADD);
 
 
     }
+ //Homework 7(28.10.25) advanced
+    @Test
+    public void addNewContactPositiveTest() {
 
-@Test
-    public void addNewContactPositiveTest(){
 
-}
+    }
 
 
 }
