@@ -1,38 +1,28 @@
 package utils;
 
 import dto.Contact;
-import dto.User;
 import net.datafaker.Faker;
+import org.checkerframework.checker.units.qual.C;
 
 public class ContactFactory {
 
     static Faker faker = new Faker();
 
-    public static void main(String[] args) {
+    public static void main(String[] args){
+        System.out.println(positiveContact());
+    }
 
-        String firstName = faker.name().firstName();
-        String lastName = faker.name().lastName();
-        String phone = faker.number().digits(14);
-        String email = faker.internet().emailAddress();
-        String streetAddress = faker.address().fullAddress();
-        String descriptionJob = faker.job().position();
-        String descriptionRel = faker.relationships().any();
-        String descriptionHob = faker.hobby().activity();
-
-
-        System.out.println(firstName);
-        System.out.println(lastName);
-        System.out.println(phone);
-        System.out.println(streetAddress);
-        System.out.println(descriptionJob + ", " + descriptionRel + ", " + descriptionHob);
-
-        System.out.println(faker.internet().emailAddress());
-
+    public  static Contact positiveContact(){
+        return Contact.builder()
+                .name(faker.name().firstName())
+                .lastName(faker.name().lastName())
+                .email(faker.internet().emailAddress())
+                .phone(faker.number().digits(14))
+                .address(faker.address().fullAddress())
+                .descriptions("it's my friend")
+                .build();
     }
 
 
 
 }
-
-
-

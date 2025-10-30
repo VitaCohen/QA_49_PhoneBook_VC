@@ -15,27 +15,33 @@ public class AddPage extends  BasePage{
                 10), this);
     }
 
-    @FindBy(xpath = "//input[@placeholder='Name']")
-    WebElement inputNameContact;
+   // @FindBy(xpath = "//input[@placeholder='Name']")
+    //WebElement inputNameContact;
+   @FindBy(xpath = "//div[@class='add_form__2rsm2']/input[1]")
+   WebElement inputName;
+    @FindBy(xpath = "//div[@class='add_form__2rsm2']/input[2]")
+    WebElement inputLastName;
+    @FindBy(xpath = "//div[@class='add_form__2rsm2']/input[3]")
+    WebElement inputPhone;
+    @FindBy(xpath = "//div[@class='add_form__2rsm2']/input[4]")
+    WebElement inputEmail;
+    @FindBy(xpath = "//div[@class='add_form__2rsm2']/input[5]")
+    WebElement inputAddress;
+    @FindBy(xpath = "//div[@class='add_form__2rsm2']/input[last()]")
+    WebElement inputDescription;
 
-    @FindBy(xpath = "//input[@placeholder='Last Name']")
-    WebElement inputLastNameContact;
-    @FindBy(xpath = "//input[@placeholder='Phone']")
-    WebElement inputPhoneContact;
-    @FindBy(xpath = "//input[@placeholder='email']")
-    WebElement inputEmailContact;
-    @FindBy(xpath = "//input[@placeholder='Address']")
-    WebElement inputAddressContact;
-    @FindBy(xpath = "//input[@placeholder='description']")
-    WebElement inputDescriptionContact;
-
-    @FindBy(xpath = "//b[text()='Save']")
+    @FindBy(xpath = "//b/..")
     WebElement btnSave;
 
 
-public static void typeNewContactForm(Contact contact){
-
-
-}
+    public void typeContactForm(Contact contact) {
+        inputName.sendKeys(contact.getName());
+        inputLastName.sendKeys(contact.getLastName());
+        inputPhone.sendKeys(contact.getPhone());
+        inputEmail.sendKeys(contact.getEmail());
+        inputAddress.sendKeys(contact.getAddress());
+        inputDescription.sendKeys(contact.getDescriptions());
+        btnSave.click();
+    }
 
 }
