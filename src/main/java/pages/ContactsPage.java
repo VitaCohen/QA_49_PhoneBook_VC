@@ -27,6 +27,8 @@ public class ContactsPage extends  BasePage{
     List<WebElement> contactsList;
 
 
+
+
     public boolean isTextContactsPtresent(String text){
         return isTextInElementPresent(btnContactsHeader,text);
 

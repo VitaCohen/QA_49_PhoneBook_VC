@@ -8,12 +8,13 @@ import org.testng.annotations.Test;
 import pages.ContactsPage;
 import pages.HomePage;
 import pages.LoginPage;
+import utils.RetryAnalyzer;
 
 import java.util.Random;
 
 public class LoginTests extends ApplicationManager {
 
-    @Test
+    @Test(retryAnalyzer = RetryAnalyzer.class)
     public void loginPositiveTest() {
         HomePage homePage = new HomePage(getDriver());
         homePage.clickBtnLoginHeader();

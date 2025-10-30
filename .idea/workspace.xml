@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0ce5e4d-f002-4474-b6ab-38d4c6b5c19a" name="Changes" comment="Homework 7&#10;AddPage - locators&#10;ContactFactory utils">
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/ContactFactoryVit.java" afterDir="false" />
+    <list default="true" id="b0ce5e4d-f002-4474-b6ab-38d4c6b5c19a" name="Changes" comment="add new contact positive test">
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/RetryAnalyzer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/AddPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/AddPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/ContactsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ContactsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/ContactFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/ContactFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ui_tests/AddNewContactTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui_tests/AddNewContactTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ui_tests/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui_tests/LoginTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,29 +63,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.AddNewContactTests.addNewContactPositiveTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.HomeTests.firstTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.LoginTests.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.LoginTests.loginNegativeTest_wrongPassword.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.LoginTests.loginNegativtTest_wrongEmail.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.LoginTests.loginPositiveTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.LoginTests.loginPositivetTest_userLombok.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.LoginTests.registrationNegativeTestULombok_wrongEmail.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.LoginTests.registrationNegativeTestULombok_wrongPassword.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.LoginTests.registrationPositivetTest_userLombok.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.QA_49_PhoneBook_VC [:ContactFactory.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.RegistrationTests.registrationNegativeTest_wrongEmail.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.RegistrationTests.registrationNegativeTest_wrongPassword.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.RegistrationTests.registrationPositiveTest.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Gradle.AddNewContactTests.addNewContactPositiveTest.executor": "Run",
+    "Gradle.AddNewContactTests.addNewContactPositiveTestValidateList.executor": "Run",
+    "Gradle.HomeTests.firstTest.executor": "Run",
+    "Gradle.LoginTests.executor": "Run",
+    "Gradle.LoginTests.loginNegativeTest_wrongPassword.executor": "Run",
+    "Gradle.LoginTests.loginNegativtTest_wrongEmail.executor": "Run",
+    "Gradle.LoginTests.loginPositiveTest.executor": "Run",
+    "Gradle.LoginTests.loginPositivetTest_userLombok.executor": "Run",
+    "Gradle.LoginTests.registrationNegativeTestULombok_wrongEmail.executor": "Run",
+    "Gradle.LoginTests.registrationNegativeTestULombok_wrongPassword.executor": "Run",
+    "Gradle.LoginTests.registrationPositivetTest_userLombok.executor": "Run",
+    "Gradle.QA_49_PhoneBook_VC [:ContactFactory.main()].executor": "Run",
+    "Gradle.RegistrationTests.registrationNegativeTest_wrongEmail.executor": "Run",
+    "Gradle.RegistrationTests.registrationNegativeTest_wrongPassword.executor": "Run",
+    "Gradle.RegistrationTests.registrationPositiveTest.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="utils" />
@@ -324,7 +325,23 @@
       <option name="project" value="LOCAL" />
       <updated>1761768390251</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="add new contact positive test">
+      <option name="closed" value="true" />
+      <created>1761844969932</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1761844969932</updated>
+    </task>
+    <task id="LOCAL-00016" summary="add new contact positive test">
+      <option name="closed" value="true" />
+      <created>1761844986898</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1761844986898</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -336,6 +353,7 @@
     <MESSAGE value="Homework_7" />
     <MESSAGE value="HeaderMenuItem" />
     <MESSAGE value="Homework 7&#10;AddPage - locators&#10;ContactFactory utils" />
-    <option name="LAST_COMMIT_MESSAGE" value="Homework 7&#10;AddPage - locators&#10;ContactFactory utils" />
+    <MESSAGE value="add new contact positive test" />
+    <option name="LAST_COMMIT_MESSAGE" value="add new contact positive test" />
   </component>
 </project>
