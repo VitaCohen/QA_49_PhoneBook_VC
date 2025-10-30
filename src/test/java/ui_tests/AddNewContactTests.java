@@ -12,8 +12,6 @@ import utils.HeaderMenuItem;
 import static pages.BasePage.*;
 import static utils.PropertiesReader.getProperty;
 
-import utils.PropertiesReader;
-
 public class AddNewContactTests extends ApplicationManager {
 
 
@@ -29,11 +27,12 @@ public class AddNewContactTests extends ApplicationManager {
         homePage = new HomePage(getDriver());
         loginPage = BasePage.clickButtonHeader(HeaderMenuItem.LOGIN);
         //loginPage.typeLoginForm("iv@mail.com", "123456Aa!");
-        loginPage.typeLoginForm(getProperty("base.properties", "login"),
-                getProperty("base.properties", "password"));
+        loginPage.typeLoginForm(getProperty("properties/base.properties", "login"),
+                getProperty("properties/base.properties", "password"));
         contactsPage = new ContactsPage(getDriver());
         numberOfContacts = contactsPage.getNumberOfContacts();
         addPage = clickButtonHeader(HeaderMenuItem.ADD);
+
 
 
     }
