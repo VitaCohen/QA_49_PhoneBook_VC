@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0ce5e4d-f002-4474-b6ab-38d4c6b5c19a" name="Changes" comment="created PropertiesReader" />
+    <list default="true" id="b0ce5e4d-f002-4474-b6ab-38d4c6b5c19a" name="Changes" comment="created PropertiesReader">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ContactsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ContactsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ui_tests/AddNewContactTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui_tests/AddNewContactTests.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,6 +67,7 @@
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Gradle.AddNewContactTests.addNewContactPositiveTest.executor": "Run",
     "Gradle.AddNewContactTests.addNewContactPositiveTestValidateList.executor": "Run",
+    "Gradle.AddNewContactTests.addNewContactPositiveTest_validateElementScroll.executor": "Run",
     "Gradle.HomeTests.firstTest.executor": "Run",
     "Gradle.LoginTests.executor": "Run",
     "Gradle.LoginTests.loginNegativeTest_wrongPassword.executor": "Run",
@@ -94,7 +99,7 @@
       <recent name="pages" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.AddNewContactTests.addNewContactPositiveTestValidateList">
+  <component name="RunManager" selected="Gradle.AddNewContactTests.addNewContactPositiveTest_validateElementScroll">
     <configuration name="ContactFactory" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="utils.ContactFactory" />
       <module name="QA_49_PhoneBook_VC.main" />
@@ -169,7 +174,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="LoginTests.loginPositivetTest_userLombok" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AddNewContactTests.addNewContactPositiveTest_validateElementScroll" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -182,7 +187,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ui_tests.LoginTests.loginPositivetTest_userLombok&quot;" />
+            <option value="&quot;ui_tests.AddNewContactTests.addNewContactPositiveTest_validateElementScroll&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -195,11 +200,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.AddNewContactTests.addNewContactPositiveTestValidateList" />
+        <item itemvalue="Gradle.AddNewContactTests.addNewContactPositiveTest_validateElementScroll" />
         <item itemvalue="Gradle.AddNewContactTests.addNewContactPositiveTest" />
+        <item itemvalue="Gradle.AddNewContactTests.addNewContactPositiveTestValidateList" />
         <item itemvalue="Application.ContactFactory" />
         <item itemvalue="Application.ContactFactoryVit" />
-        <item itemvalue="Gradle.LoginTests.loginPositivetTest_userLombok" />
       </list>
     </recent_temporary>
   </component>
@@ -372,7 +377,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761936334230</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="created PropertiesReader">
+      <option name="closed" value="true" />
+      <created>1762028548980</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1762028548980</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

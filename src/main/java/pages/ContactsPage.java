@@ -1,8 +1,12 @@
 package pages;
 
 import dto.Contact;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.interactions.WheelInput;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
@@ -25,8 +29,14 @@ public class ContactsPage extends  BasePage{
 
     @FindBy(className = "contact-item_card__2SOIM")
     List<WebElement> contactsList;
+    @FindBy(xpath = "//div[@class='contact-page_leftdiv__yhyke']/div/div[last()]/h2")
+    WebElement lastElementList;
 
+    @FindBy(xpath ="//div[@class='contact-page_leftdiv__yhyke']/div")
+    WebElement divElementsList;
 
+    @FindBy(xpath = "//div[contains(@class,'contact-item-detailed_card')]")
+    WebElement itemDetailedCard;
 
 
     public boolean isTextContactsPtresent(String text){
@@ -58,5 +68,29 @@ public class ContactsPage extends  BasePage{
         return false;
     }
 
+
+    public void clickLastContact() {
+        lastElementList.click();
+    }
+
+
+    public void scrollToLastElementList() {
+        Actions actions = new Actions(driver);
+       //actions.scrollToElement(lastElementList).perform();
+        int deltaY = divElementsList.getSize().getHeight();
+        WheelInput.ScrollOrigin scrollOrigin = WheelInput.ScrollOrigin.fromElement(contactsList.get(0));
+        pause(3);
+        actions.scrollFromOrigin(scrollOrigin, 0, deltaY).perform();
+
+    }
+
+    public void scrollToLastElementListJS() {
+        JavascriptExecutor js = ((JavascriptExecutor) driver);
+        js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
+    }
+
+ public String getContactCardText(){
+        return  itemDetailedCard.getText();
+ }
 
 }

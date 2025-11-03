@@ -5,6 +5,7 @@ import manager.ApplicationManager;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 import pages.*;
 import utils.ContactFactory;
 import utils.HeaderMenuItem;
@@ -14,7 +15,7 @@ import static utils.PropertiesReader.getProperty;
 
 public class AddNewContactTests extends ApplicationManager {
 
-
+    SoftAssert softAssert = new SoftAssert();
     HomePage homePage;
     LoginPage loginPage;
     ContactsPage contactsPage;
@@ -34,7 +35,6 @@ public class AddNewContactTests extends ApplicationManager {
         addPage = clickButtonHeader(HeaderMenuItem.ADD);
 
 
-
     }
 
     //Homework 7(28.10.25) advanced
@@ -46,12 +46,29 @@ public class AddNewContactTests extends ApplicationManager {
 
     }
 
-@Test
-public void addNewContactPositiveTestValidateList(){
-    Contact contact = ContactFactory.positiveContact();
-    addPage.typeContactForm(contact);
-    Assert.assertTrue(contactsPage.isContactPresent(contact));
-}
+    @Test
+    public void addNewContactPositiveTestValidateList() {
+        Contact contact = ContactFactory.positiveContact();
+        addPage.typeContactForm(contact);
+        Assert.assertTrue(contactsPage.isContactPresent(contact));
+    }
+
+    @Test
+    public void addNewContactPositiveTest_validateElementScroll() {
+        Contact contact = ContactFactory.positiveContact();
+        addPage.typeContactForm(contact);
+        contactsPage.scrollToLastElementList();
+        contactsPage.clickLastContact();
+        //contactsPage.scrollToLastElementListJS();
+        String  text = contactsPage.getContactCardText();
+       softAssert.assertTrue(text.contains(contact.getName()));
+       softAssert.assertTrue(text.contains(contact.getLastName()));
+       softAssert.assertTrue(text.contains(contact.getPhone()));
+       softAssert.assertTrue(text.contains("zzzzzzzzzzzzz"), "message contains Phone");
+       softAssert.assertTrue(text.contains(contact.getEmail()));
+       softAssert.assertTrue(text.contains(contact.getAddress()), "contains adress");
+       softAssert.assertAll();
+    }
 
 
 }
