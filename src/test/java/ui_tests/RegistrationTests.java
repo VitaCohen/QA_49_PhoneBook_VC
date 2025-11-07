@@ -9,6 +9,8 @@ import pages.ContactsPage;
 import pages.HomePage;
 import pages.LoginPage;
 
+import java.lang.reflect.Method;
+
 import static utils.UserFactory.*;
 
 public class RegistrationTests extends ApplicationManager {
@@ -24,8 +26,9 @@ public class RegistrationTests extends ApplicationManager {
 
 
     @Test
-    public void registrationPositiveTest() {
+    public void registrationPositiveTest(Method method) {
         User user = positiveUser();
+        logger.info("Start testing " + method.getName() + "with data " + user);
         loginPage.typeRegForm(user);
         Assert.assertTrue(new ContactsPage(getDriver()).isTextNoContactsPresent("No Contacts here!"));
     }
