@@ -66,7 +66,7 @@ public class AddNewContactTests extends ApplicationManager {
        softAssert.assertTrue(text.contains(contact.getPhone()));
        softAssert.assertTrue(text.contains("zzzzzzzzzzzzz"), "message contains Phone");
        softAssert.assertTrue(text.contains(contact.getEmail()));
-       softAssert.assertTrue(text.contains(contact.getAddress()), "contains adress");
+       softAssert.assertTrue(text.contains(contact.getAddress()), "contains address");
        softAssert.assertAll();
     }
 

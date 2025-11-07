@@ -10,6 +10,7 @@ import pages.HomePage;
 import pages.LoginPage;
 import utils.RetryAnalyzer;
 
+import java.lang.reflect.Method;
 import java.util.Random;
 
 public class LoginTests extends ApplicationManager {
@@ -26,11 +27,12 @@ public class LoginTests extends ApplicationManager {
     }
 
     @Test
-    public void loginPositivetTest_userLombok() {
+    public void loginPositivetTest_userLombok(Method method) {
         UserLombok userLombok = UserLombok.builder()
                 .username("a@mail.ru")
                 .password("Password123!")
                 .build();
+        logger.info("Start testing " + method.getName() + "with data " + userLombok);
         HomePage homePage = new HomePage(getDriver());
         homePage.clickBtnLoginHeader();
         LoginPage loginPage = new LoginPage(getDriver());
