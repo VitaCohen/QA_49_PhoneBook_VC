@@ -4,15 +4,18 @@ import dto.User;
 import dto.UserLombok;
 import manager.ApplicationManager;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import pages.ContactsPage;
 import pages.HomePage;
 import pages.LoginPage;
 import utils.RetryAnalyzer;
+import utils.TestNGListener;
 
 import java.lang.reflect.Method;
 import java.util.Random;
 
+@Listeners(TestNGListener.class)
 public class LoginTests extends ApplicationManager {
 
     @Test(retryAnalyzer = RetryAnalyzer.class)
