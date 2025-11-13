@@ -55,5 +55,6 @@ public class WDListener implements WebDriverListener {
     public void onError(Object target, Method method, Object[] args, InvocationTargetException e) {
         WebDriverListener.super.onError(target, method, args, e);
         logger.error("created exception {}", e.toString());
+
     }
 }

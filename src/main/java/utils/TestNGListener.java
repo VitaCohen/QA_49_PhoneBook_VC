@@ -25,6 +25,7 @@ public class TestNGListener implements ITestListener {
     public void onTestFailure(ITestResult result) {
         ITestListener.super.onTestFailure(result);
         logger.error(("failed test --> " + result.getMethod()));
+
     }
 
     @Override
