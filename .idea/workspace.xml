@@ -4,19 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0ce5e4d-f002-4474-b6ab-38d4c6b5c19a" name="Changes" comment="HW_11, TestNGListener, WDListener">
-      <change afterPath="$PROJECT_DIR$/src/main/java/data_providers/ContactDP.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/TakeScreenShot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ui_tests/DeleteContactTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ui_tests/EditContactTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/data_csv/fhonebook.csv" afterDir="false" />
+    <list default="true" id="b0ce5e4d-f002-4474-b6ab-38d4c6b5c19a" name="Changes" comment="Create DeleteContactTests,EditContactTest, DataProvider">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ContactsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ContactsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/TestNGListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/TestNGListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/WDListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/WDListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ui_tests/AddNewContactTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui_tests/AddNewContactTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ui_tests/HomeTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui_tests/HomeTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/logback.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ui_tests/DeleteContactTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui_tests/DeleteContactTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ui_tests/EditContactTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui_tests/EditContactTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,36 +62,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Gradle.AddNewContactTests.addNewContactPositiveTest.executor": "Run",
-    "Gradle.AddNewContactTests.addNewContactPositiveTestValidateList.executor": "Run",
-    "Gradle.AddNewContactTests.addNewContactPositiveTest_validateElementScroll.executor": "Run",
-    "Gradle.AddNewContactTests.addNewContactPositiveTest_withDataProvider.executor": "Run",
-    "Gradle.HomeTests.firstTest.executor": "Run",
-    "Gradle.LoginTests.executor": "Run",
-    "Gradle.LoginTests.loginNegativeTest_wrongPassword.executor": "Run",
-    "Gradle.LoginTests.loginNegativtTest_wrongEmail.executor": "Run",
-    "Gradle.LoginTests.loginPositiveTest.executor": "Run",
-    "Gradle.LoginTests.loginPositivetTest_userLombok.executor": "Run",
-    "Gradle.LoginTests.registrationNegativeTestULombok_wrongEmail.executor": "Run",
-    "Gradle.LoginTests.registrationNegativeTestULombok_wrongPassword.executor": "Run",
-    "Gradle.LoginTests.registrationPositivetTest_userLombok.executor": "Run",
-    "Gradle.QA_49_PhoneBook_VC [:ContactFactory.main()].executor": "Run",
-    "Gradle.QA_49_PhoneBook_VC [:TakeScreenShot.main()].executor": "Run",
-    "Gradle.RegistrationTests.registrationNegativeTest_wrongEmail.executor": "Run",
-    "Gradle.RegistrationTests.registrationNegativeTest_wrongPassword.executor": "Run",
-    "Gradle.RegistrationTests.registrationPositiveTest.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Projects IDEA/QA_49/QA_49_PhoneBook_VC/src/test/resources/data_csv"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Gradle.AddNewContactTests.addNewContactPositiveTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.AddNewContactTests.addNewContactPositiveTestValidateList.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.AddNewContactTests.addNewContactPositiveTest_validateElementScroll.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.AddNewContactTests.addNewContactPositiveTest_withDataProvider.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.DeleteContactTests.deleteFirstContactPositiveTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.EditContactTests.editFirstContactPositiveTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.HomeTests.firstTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.LoginTests.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.LoginTests.loginNegativeTest_wrongPassword.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.LoginTests.loginNegativtTest_wrongEmail.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.LoginTests.loginPositiveTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.LoginTests.loginPositivetTest_userLombok.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.LoginTests.registrationNegativeTestULombok_wrongEmail.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.LoginTests.registrationNegativeTestULombok_wrongPassword.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.LoginTests.registrationPositivetTest_userLombok.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.QA_49_PhoneBook_VC [:ContactFactory.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.QA_49_PhoneBook_VC [:TakeScreenShot.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.RegistrationTests.registrationNegativeTest_wrongEmail.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.RegistrationTests.registrationNegativeTest_wrongPassword.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.RegistrationTests.registrationPositiveTest.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Projects IDEA/QA_49/QA_49_PhoneBook_VC/src/test/resources/data_csv&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Projects IDEA\QA_49\QA_49_PhoneBook_VC\src\test\resources\data_csv" />
@@ -114,7 +107,7 @@
       <recent name="pages" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.HomeTests.firstTest">
+  <component name="RunManager" selected="Gradle.EditContactTests.editFirstContactPositiveTest">
     <configuration name="TakeScreenShot" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="utils.TakeScreenShot" />
       <module name="QA_49_PhoneBook_VC.main" />
@@ -152,7 +145,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="AddNewContactTests.addNewContactPositiveTest_withDataProvider" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="DeleteContactTests.deleteFirstContactPositiveTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -165,7 +158,31 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ui_tests.AddNewContactTests.addNewContactPositiveTest_withDataProvider&quot;" />
+            <option value="&quot;ui_tests.DeleteContactTests.deleteFirstContactPositiveTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="EditContactTests.editFirstContactPositiveTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ui_tests.EditContactTests.editFirstContactPositiveTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -200,37 +217,13 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="RegistrationTests.registrationPositiveTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;ui_tests.RegistrationTests.registrationPositiveTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.EditContactTests.editFirstContactPositiveTest" />
+        <item itemvalue="Gradle.DeleteContactTests.deleteFirstContactPositiveTest" />
         <item itemvalue="Gradle.HomeTests.firstTest" />
         <item itemvalue="Application.TakeScreenShot" />
         <item itemvalue="Gradle.AddNewContactTests.addNewContactPositiveTest" />
-        <item itemvalue="Gradle.AddNewContactTests.addNewContactPositiveTest_withDataProvider" />
-        <item itemvalue="Gradle.RegistrationTests.registrationPositiveTest" />
       </list>
     </recent_temporary>
   </component>
@@ -443,7 +436,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762893984163</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Create DeleteContactTests,EditContactTest, DataProvider">
+      <option name="closed" value="true" />
+      <created>1763060315804</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1763060315804</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -461,6 +462,7 @@
     <MESSAGE value="created Actions scroll, softs asserts" />
     <MESSAGE value="HW_10, logger" />
     <MESSAGE value="HW_11, TestNGListener, WDListener" />
-    <option name="LAST_COMMIT_MESSAGE" value="HW_11, TestNGListener, WDListener" />
+    <MESSAGE value="Create DeleteContactTests,EditContactTest, DataProvider" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create DeleteContactTests,EditContactTest, DataProvider" />
   </component>
 </project>
