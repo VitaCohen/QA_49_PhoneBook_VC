@@ -17,8 +17,8 @@ public class EditContactTests extends ApplicationManager {
     AddPage addPage;
     int numberOfContacts;
 
-    @BeforeMethod
-    public void login(){
+    @BeforeMethod(alwaysRun = true)
+    public void login() {
         homePage = new HomePage(getDriver());
         loginPage = BasePage.clickButtonHeader(HeaderMenuItem.LOGIN);
         loginPage.typeLoginForm(getProperty("base.properties", "login"),
@@ -27,8 +27,8 @@ public class EditContactTests extends ApplicationManager {
         numberOfContacts = contactsPage.getNumberOfContacts();
     }
 
-  @Test
-    public void editFirstContactPositiveTest(){
+    @Test(groups = {"smoke", "contact"})
+    public void editFirstContactPositiveTest() {
         contactsPage.typeEditForm(ContactFactory.positiveContact());
     }
 }

@@ -20,7 +20,7 @@ public class RegistrationTests extends ApplicationManager {
 
     LoginPage loginPage;
 
-    @BeforeMethod
+    @BeforeMethod (alwaysRun = true)
     public void goToRegPage() {
         new HomePage(getDriver()).clickBtnLoginHeader();
         loginPage = new LoginPage(getDriver());
@@ -28,7 +28,7 @@ public class RegistrationTests extends ApplicationManager {
     }
 
 
-    @Test
+    @Test (groups = {"smoke", "user"})
     public void registrationPositiveTest(Method method) {
         User user = positiveUser();
         logger.info("Start testing " + method.getName() + "with data " + user);
@@ -37,7 +37,7 @@ public class RegistrationTests extends ApplicationManager {
     }
 
 
-    @Test
+    @Test(groups = "negative")
     public void registrationNegativeTest_wrongEmail() {
         User user = positiveUser();
         user.setUsername("Wrong email");

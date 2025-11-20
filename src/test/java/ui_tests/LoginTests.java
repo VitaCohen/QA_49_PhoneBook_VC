@@ -18,7 +18,7 @@ import java.util.Random;
 @Listeners(TestNGListener.class)
 public class LoginTests extends ApplicationManager {
 
-    @Test(retryAnalyzer = RetryAnalyzer.class)
+    @Test (groups = {"smoke", "user"}) //(retryAnalyzer = RetryAnalyzer.class)
     public void loginPositiveTest() {
         HomePage homePage = new HomePage(getDriver());
         homePage.clickBtnLoginHeader();
@@ -44,7 +44,7 @@ public class LoginTests extends ApplicationManager {
 
     }
 
-    @Test
+    @Test(groups = "negative")
     public void loginNegativeTest_wrongPassword() {
         User user = new User("a@mail.ru", "password123!");
         HomePage homePage = new HomePage(getDriver());
