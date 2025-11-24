@@ -4,20 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0ce5e4d-f002-4474-b6ab-38d4c6b5c19a" name="Changes" comment="Create DeleteContactTests,EditContactTest, DataProvider">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/comands.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/negative_tests.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/smoke_contact_tests.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/smoke_tests.xml" afterDir="false" />
+    <list default="true" id="b0ce5e4d-f002-4474-b6ab-38d4c6b5c19a" name="Changes" comment="Gredlew, Suites, Groups,Browsers">
+      <change afterPath="$PROJECT_DIR$/src/main/java/dto/TokenDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/BaseApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/api_tests/AddNewContactTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/api_tests/RegistrationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/manager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/ApplicationManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ui_tests/AddNewContactTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui_tests/AddNewContactTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ui_tests/DeleteContactTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui_tests/DeleteContactTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ui_tests/EditContactTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui_tests/EditContactTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ui_tests/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui_tests/LoginTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ui_tests/RegistrationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui_tests/RegistrationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +46,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -92,6 +86,7 @@
     "Gradle.LoginTests.registrationPositivetTest_userLombok.executor": "Run",
     "Gradle.QA_49_PhoneBook_VC [:ContactFactory.main()].executor": "Run",
     "Gradle.QA_49_PhoneBook_VC [:TakeScreenShot.main()].executor": "Run",
+    "Gradle.QA_49_PhoneBook_VC [different_tests].executor": "Run",
     "Gradle.QA_49_PhoneBook_VC [smoke_contact_tests].executor": "Run",
     "Gradle.QA_49_PhoneBook_VC [smoke_tests].executor": "Run",
     "Gradle.RegistrationTests.registrationNegativeTest_wrongEmail.executor": "Run",
@@ -121,8 +116,8 @@
       <recent name="pages" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.QA_49_PhoneBook_VC [smoke_contact_tests]">
-    <configuration name="AddNewContactTests.addNewContactPositiveTest_withDataProvider" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.AddNewContactTests.addNewContactPositiveTest">
+    <configuration name="AddNewContactTests.addNewContactPositiveTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -135,7 +130,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ui_tests.AddNewContactTests.addNewContactPositiveTest_withDataProvider&quot;" />
+            <option value="&quot;api_tests.AddNewContactTests.addNewContactPositiveTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -146,52 +141,26 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="DeleteContactTests.deleteFirstContactPositiveTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="QA_49_PhoneBook_VC [different_tests]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
+        <option name="scriptParameters" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;ui_tests.DeleteContactTests.deleteFirstContactPositiveTest&quot;" />
+            <option value="different_tests" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="EditContactTests.editFirstContactPositiveTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;ui_tests.EditContactTests.editFirstContactPositiveTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
+      <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
     <configuration name="QA_49_PhoneBook_VC [smoke_contact_tests]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -216,35 +185,61 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="QA_49_PhoneBook_VC [smoke_tests]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="RegistrationTests.registrationNegativeTest_wrongPassword" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value="smoke_tests" />
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;api_tests.RegistrationTests.registrationNegativeTest_wrongPassword&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="RegistrationTests.registrationPositiveTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;api_tests.RegistrationTests.registrationPositiveTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.AddNewContactTests.addNewContactPositiveTest" />
+        <item itemvalue="Gradle.RegistrationTests.registrationNegativeTest_wrongPassword" />
+        <item itemvalue="Gradle.RegistrationTests.registrationPositiveTest" />
+        <item itemvalue="Gradle.QA_49_PhoneBook_VC [different_tests]" />
         <item itemvalue="Gradle.QA_49_PhoneBook_VC [smoke_contact_tests]" />
-        <item itemvalue="Gradle.QA_49_PhoneBook_VC [smoke_tests]" />
-        <item itemvalue="Gradle.EditContactTests.editFirstContactPositiveTest" />
-        <item itemvalue="Gradle.AddNewContactTests.addNewContactPositiveTest_withDataProvider" />
-        <item itemvalue="Gradle.DeleteContactTests.deleteFirstContactPositiveTest" />
       </list>
     </recent_temporary>
   </component>
@@ -481,7 +476,15 @@
       <option name="project" value="LOCAL" />
       <updated>1763367306674</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Gredlew, Suites, Groups,Browsers">
+      <option name="closed" value="true" />
+      <created>1763671691360</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1763671691360</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -500,6 +503,7 @@
     <MESSAGE value="HW_10, logger" />
     <MESSAGE value="HW_11, TestNGListener, WDListener" />
     <MESSAGE value="Create DeleteContactTests,EditContactTest, DataProvider" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create DeleteContactTests,EditContactTest, DataProvider" />
+    <MESSAGE value="Gredlew, Suites, Groups,Browsers" />
+    <option name="LAST_COMMIT_MESSAGE" value="Gredlew, Suites, Groups,Browsers" />
   </component>
 </project>
