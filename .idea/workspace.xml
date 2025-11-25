@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0ce5e4d-f002-4474-b6ab-38d4c6b5c19a" name="Changes" comment="Gredlew, Suites, Groups,Browsers">
-      <change afterPath="$PROJECT_DIR$/src/main/java/dto/TokenDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/BaseApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/api_tests/AddNewContactTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/api_tests/RegistrationTests.java" afterDir="false" />
+    <list default="true" id="b0ce5e4d-f002-4474-b6ab-38d4c6b5c19a" name="Changes" comment="started OKHTTP">
+      <change afterPath="$PROJECT_DIR$/src/test/java/api_tests/GetAllContacts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/api_tests/UpdateContact.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/BaseApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/BaseApi.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +73,7 @@
     "Gradle.AddNewContactTests.addNewContactPositiveTest_withDataProvider.executor": "Run",
     "Gradle.DeleteContactTests.deleteFirstContactPositiveTest.executor": "Run",
     "Gradle.EditContactTests.editFirstContactPositiveTest.executor": "Run",
+    "Gradle.GetAllContacts.getAllContactsPositiveTests.executor": "Run",
     "Gradle.HomeTests.firstTest.executor": "Run",
     "Gradle.LoginTests.executor": "Run",
     "Gradle.LoginTests.loginNegativeTest_wrongPassword.executor": "Run",
@@ -116,7 +115,7 @@
       <recent name="pages" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.AddNewContactTests.addNewContactPositiveTest">
+  <component name="RunManager" selected="Gradle.GetAllContacts.getAllContactsPositiveTests">
     <configuration name="AddNewContactTests.addNewContactPositiveTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -141,6 +140,30 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="GetAllContacts.getAllContactsPositiveTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;api_tests.GetAllContacts.getAllContactsPositiveTests&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="QA_49_PhoneBook_VC [different_tests]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -153,28 +176,6 @@
         <option name="taskNames">
           <list>
             <option value="different_tests" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="QA_49_PhoneBook_VC [smoke_contact_tests]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="smoke_contact_tests" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -235,11 +236,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.GetAllContacts.getAllContactsPositiveTests" />
         <item itemvalue="Gradle.AddNewContactTests.addNewContactPositiveTest" />
         <item itemvalue="Gradle.RegistrationTests.registrationNegativeTest_wrongPassword" />
         <item itemvalue="Gradle.RegistrationTests.registrationPositiveTest" />
         <item itemvalue="Gradle.QA_49_PhoneBook_VC [different_tests]" />
-        <item itemvalue="Gradle.QA_49_PhoneBook_VC [smoke_contact_tests]" />
       </list>
     </recent_temporary>
   </component>
@@ -484,7 +485,15 @@
       <option name="project" value="LOCAL" />
       <updated>1763671691360</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="started OKHTTP">
+      <option name="closed" value="true" />
+      <created>1764010074200</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1764010074200</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -504,6 +513,7 @@
     <MESSAGE value="HW_11, TestNGListener, WDListener" />
     <MESSAGE value="Create DeleteContactTests,EditContactTest, DataProvider" />
     <MESSAGE value="Gredlew, Suites, Groups,Browsers" />
-    <option name="LAST_COMMIT_MESSAGE" value="Gredlew, Suites, Groups,Browsers" />
+    <MESSAGE value="started OKHTTP" />
+    <option name="LAST_COMMIT_MESSAGE" value="started OKHTTP" />
   </component>
 </project>
