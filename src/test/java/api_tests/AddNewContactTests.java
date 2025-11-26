@@ -34,7 +34,7 @@ public class AddNewContactTests implements BaseApi {
         }
         if (response.code() == 200) {
             try {
-                token = GSON.fromJson(response.body().string(), TokenDto.class);
+               token = GSON.fromJson(response.body().string(), TokenDto.class);
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
