@@ -4,11 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0ce5e4d-f002-4474-b6ab-38d4c6b5c19a" name="Changes" comment="HW_14">
-      <change afterPath="$PROJECT_DIR$/src/main/java/dto/AddContactResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/api_tests/UpdateContact.java" afterDir="false" />
+    <list default="true" id="b0ce5e4d-f002-4474-b6ab-38d4c6b5c19a" name="Changes" comment="HW_14 API GetAllContacts, UpdateContact">
+      <change afterPath="$PROJECT_DIR$/src/main/java/dto/ContactsDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dto/ErrorMessageDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dto/ResponseMessageDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/api_tests/DeleteContactTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/api_tests/GetAllContactsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/api_tests/ILogin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/api_tests/UpdateContactTestAlex.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/api_tests/AddNewContactTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api_tests/AddNewContactTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/api_tests/GetAllContacts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api_tests/GetAllContacts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/api_tests/UpdateContact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api_tests/UpdateContact.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,13 +74,17 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Gradle.AddNewContactTests.addNewContactNegativeTest.executor": "Run",
     "Gradle.AddNewContactTests.addNewContactPositiveTest.executor": "Run",
     "Gradle.AddNewContactTests.addNewContactPositiveTestValidateList.executor": "Run",
     "Gradle.AddNewContactTests.addNewContactPositiveTest_validateElementScroll.executor": "Run",
     "Gradle.AddNewContactTests.addNewContactPositiveTest_withDataProvider.executor": "Run",
     "Gradle.DeleteContactTests.deleteFirstContactPositiveTest.executor": "Run",
+    "Gradle.DeleteContactTests.deletePositiveTest.executor": "Run",
     "Gradle.EditContactTests.editFirstContactPositiveTest.executor": "Run",
     "Gradle.GetAllContacts.getAllContactsPositiveTests.executor": "Run",
+    "Gradle.GetAllContactsTest.getAllContactsNegativeTest.executor": "Run",
+    "Gradle.GetAllContactsTest.getAllContactsPositiveTest.executor": "Run",
     "Gradle.HomeTests.firstTest.executor": "Run",
     "Gradle.LoginTests.executor": "Run",
     "Gradle.LoginTests.loginNegativeTest_wrongPassword.executor": "Run",
@@ -92,6 +103,7 @@
     "Gradle.RegistrationTests.registrationNegativeTest_wrongPassword.executor": "Run",
     "Gradle.RegistrationTests.registrationPositiveTest.executor": "Run",
     "Gradle.UpdateContact.updateContactPositiveTest.executor": "Run",
+    "Gradle.UpdateContactTestAlex.updateContactPositiveTest.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -116,8 +128,8 @@
       <recent name="pages" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.UpdateContact.updateContactPositiveTest">
-    <configuration name="AddNewContactTests.addNewContactPositiveTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.DeleteContactTests.deletePositiveTest">
+    <configuration name="AddNewContactTests.addNewContactNegativeTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -130,7 +142,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;api_tests.AddNewContactTests.addNewContactPositiveTest&quot;" />
+            <option value="&quot;api_tests.AddNewContactTests.addNewContactNegativeTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -141,7 +153,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="GetAllContacts.getAllContactsPositiveTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="DeleteContactTests.deletePositiveTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -154,7 +166,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;api_tests.GetAllContacts.getAllContactsPositiveTests&quot;" />
+            <option value="&quot;api_tests.DeleteContactTests.deletePositiveTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -165,7 +177,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="RegistrationTests.registrationNegativeTest_wrongPassword" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="GetAllContactsTest.getAllContactsNegativeTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -178,7 +190,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;api_tests.RegistrationTests.registrationNegativeTest_wrongPassword&quot;" />
+            <option value="&quot;api_tests.GetAllContactsTest.getAllContactsNegativeTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -189,7 +201,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="RegistrationTests.registrationPositiveTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="GetAllContactsTest.getAllContactsPositiveTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -202,7 +214,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;api_tests.RegistrationTests.registrationPositiveTest&quot;" />
+            <option value="&quot;api_tests.GetAllContactsTest.getAllContactsPositiveTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -213,7 +225,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="UpdateContact.updateContactPositiveTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="UpdateContactTestAlex.updateContactPositiveTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -226,7 +238,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;api_tests.UpdateContact.updateContactPositiveTest&quot;" />
+            <option value="&quot;api_tests.UpdateContactTestAlex.updateContactPositiveTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -239,11 +251,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.UpdateContact.updateContactPositiveTest" />
-        <item itemvalue="Gradle.AddNewContactTests.addNewContactPositiveTest" />
-        <item itemvalue="Gradle.GetAllContacts.getAllContactsPositiveTests" />
-        <item itemvalue="Gradle.RegistrationTests.registrationNegativeTest_wrongPassword" />
-        <item itemvalue="Gradle.RegistrationTests.registrationPositiveTest" />
+        <item itemvalue="Gradle.DeleteContactTests.deletePositiveTest" />
+        <item itemvalue="Gradle.UpdateContactTestAlex.updateContactPositiveTest" />
+        <item itemvalue="Gradle.GetAllContactsTest.getAllContactsNegativeTest" />
+        <item itemvalue="Gradle.GetAllContactsTest.getAllContactsPositiveTest" />
+        <item itemvalue="Gradle.AddNewContactTests.addNewContactNegativeTest" />
       </list>
     </recent_temporary>
   </component>
@@ -504,7 +516,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764103081568</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="HW_14 API GetAllContacts, UpdateContact">
+      <option name="closed" value="true" />
+      <created>1764184716167</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1764184716167</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -526,6 +546,7 @@
     <MESSAGE value="Gredlew, Suites, Groups,Browsers" />
     <MESSAGE value="started OKHTTP" />
     <MESSAGE value="HW_14" />
-    <option name="LAST_COMMIT_MESSAGE" value="HW_14" />
+    <MESSAGE value="HW_14 API GetAllContacts, UpdateContact" />
+    <option name="LAST_COMMIT_MESSAGE" value="HW_14 API GetAllContacts, UpdateContact" />
   </component>
 </project>

@@ -1,6 +1,5 @@
 package api_tests;
 
-import dto.AddContactResponse;
 import dto.Contact;
 import dto.TokenDto;
 import dto.User;
@@ -14,6 +13,8 @@ import utils.BaseApi;
 import utils.ContactFactory;
 
 import java.io.IOException;
+
+// I am
 
 public class UpdateContact implements BaseApi {
 

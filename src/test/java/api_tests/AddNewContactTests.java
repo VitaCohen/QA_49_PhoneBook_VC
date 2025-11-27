@@ -6,6 +6,7 @@ import dto.User;
 import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.Response;
+import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -34,7 +35,7 @@ public class AddNewContactTests implements BaseApi {
         }
         if (response.code() == 200) {
             try {
-               token = GSON.fromJson(response.body().string(), TokenDto.class);
+                token = GSON.fromJson(response.body().string(), TokenDto.class);
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
@@ -51,9 +52,45 @@ public class AddNewContactTests implements BaseApi {
                 .post(requestBody)
                 .build();
         try (Response response = OK_HTTP_CLIENT.newCall(request).execute()) {
-            System.out.println(response.code());
+            Assert.assertEquals(response.code(), 200);
         } catch (IOException e) {
             e.printStackTrace();
+            Assert.fail("created exception");
+        }
+    }
+
+    @Test
+    public void addNewContactNegativeTest_400() {
+        Contact contact = ContactFactory.positiveContact();
+        RequestBody requestBody = RequestBody.create(GSON.toJson(contact), JSON);
+        Request request = new Request.Builder()
+                .url(BASE_URL + ADD_NEW_CONTACT)
+                .addHeader(AUTH, token.getToken())
+                .post(requestBody)
+                .build();
+        try (Response response = OK_HTTP_CLIENT.newCall(request).execute()) {
+            Assert.assertEquals(response.code(), 400);
+        } catch (IOException e) {
+            e.printStackTrace();
+            Assert.fail("created exception");
+        }
+    }
+
+    @Test
+    public void addNewContactNegativeTest_401() {
+        Contact contact = ContactFactory.positiveContact();
+        contact.setName("");
+        RequestBody requestBody = RequestBody.create(GSON.toJson(contact), JSON);
+        Request request = new Request.Builder()
+                .url(BASE_URL + ADD_NEW_CONTACT)
+                .addHeader(AUTH, "")
+                .post(requestBody)
+                .build();
+        try (Response response = OK_HTTP_CLIENT.newCall(request).execute()) {
+            Assert.assertEquals(response.code(), 401);
+        } catch (IOException e) {
+            e.printStackTrace();
+            Assert.fail("created exception");
         }
     }
 
